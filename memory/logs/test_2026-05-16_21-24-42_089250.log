@@ -1,0 +1,50 @@
+2026-05-16 21:24:42.092 | INFO     | __main__:main:151 - 
+
+
+2026-05-16 21:24:42.092 | INFO     | __main__:main:152 - ######################################################################
+2026-05-16 21:24:42.093 | INFO     | __main__:main:153 - # VEDA BASIC END-TO-END TESTS
+2026-05-16 21:24:42.093 | INFO     | __main__:main:154 - ######################################################################
+2026-05-16 21:24:42.093 | INFO     | __main__:test_basic_query:24 - 
+======================================================================
+2026-05-16 21:24:42.093 | INFO     | __main__:test_basic_query:25 - TEST: Basic Query
+2026-05-16 21:24:42.093 | INFO     | __main__:test_basic_query:26 - ======================================================================
+2026-05-16 21:24:42.095 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 21:24:42.097 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 21:24:42.117 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 21:24:42.118 | INFO     | __main__:test_basic_query:63 - [TEST] Input: What is LangGraph?
+2026-05-16 21:24:42.119 | INFO     | __main__:test_basic_query:64 - [TEST] Session: 31dc9079-120b-4a3d-8dd7-e986fa02cefa
+2026-05-16 21:24:42.119 | INFO     | __main__:test_basic_query:68 - [TEST] Invoking agent graph...
+2026-05-16 21:24:42.128 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=31dc9079-120b-4a3d-8dd7-e986fa02cefa
+2026-05-16 21:24:42.128 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=31dc9079-120b-4a3d-8dd7-e986fa02cefa
+2026-05-16 21:24:42.129 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='What is LangGraph?...'
+2026-05-16 21:25:26.082 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=LangGraph | tone=normal | confidence=8/10
+2026-05-16 21:25:26.086 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 21:25:26.089 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 21:25:40.790 | INFO     | agent.nodes.writer:writer:91 - [NODE: writer] COMPLETE | response_length=317 chars
+2026-05-16 21:25:40.792 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=31dc9079-120b-4a3d-8dd7-e986fa02cefa
+2026-05-16 21:25:40.793 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=31dc9079-120b-4a3d-8dd7-e986fa02cefa
+2026-05-16 21:25:40.794 | INFO     | __main__:test_basic_query:72 - [TEST] Graph execution complete
+2026-05-16 21:25:40.794 | INFO     | __main__:test_basic_query:73 - [TEST] Intent: research
+2026-05-16 21:25:40.794 | INFO     | __main__:test_basic_query:74 - [TEST] Tone: normal
+2026-05-16 21:25:40.794 | INFO     | __main__:test_basic_query:75 - [TEST] Confidence: 8
+2026-05-16 21:25:40.794 | INFO     | __main__:test_basic_query:79 - 
+[TEST] ✓ RESPONSE RECEIVED:
+Hey there!  LangGraph is like a super smart tool that helps computers understand and process information. Think of it as a massive library where all kinds of text are stored, organized, and ready to be used for different tasks. It's pretty cool! 🤯 
+
+Do you want to know more about how it works or what it can do? 😊  
+
+
+2026-05-16 21:25:40.794 | INFO     | __main__:test_research_query:94 - 
+======================================================================
+2026-05-16 21:25:40.794 | INFO     | __main__:test_research_query:95 - TEST: Research Query
+2026-05-16 21:25:40.794 | INFO     | __main__:test_research_query:96 - ======================================================================
+2026-05-16 21:25:40.795 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 21:25:40.797 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 21:25:40.817 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 21:25:40.817 | INFO     | __main__:test_research_query:131 - [TEST] Input: Explain machine learning concepts
+2026-05-16 21:25:40.820 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=ff0ee83f-558c-4148-b917-7d51494910e6
+2026-05-16 21:25:40.820 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=ff0ee83f-558c-4148-b917-7d51494910e6
+2026-05-16 21:25:40.821 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='Explain machine learning concepts...'
+2026-05-16 21:25:52.264 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=machine learning | tone=normal | confidence=8/10
+2026-05-16 21:25:52.268 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 21:25:52.269 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal

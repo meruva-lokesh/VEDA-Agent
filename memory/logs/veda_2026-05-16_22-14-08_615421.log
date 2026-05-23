@@ -1,0 +1,141 @@
+2026-05-16 22:14:11.401 | WARNING  | memory.hindsight_store:__init__:58 - [HINDSIGHT] Disabled via settings — skipping init
+2026-05-16 22:14:11.716 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:14:11.717 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:14:11.726 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:14:11.726 | INFO     | __main__:<module>:234 - [MAIN] Starting VEDA...
+2026-05-16 22:14:11.728 | INFO     | __main__:__init__:66 - [VEDA] Initializing...
+2026-05-16 22:14:11.728 | INFO     | __main__:__init__:78 - [VEDA] Initializing real voice components
+2026-05-16 22:14:11.729 | INFO     | voice.tts:__init__:20 - [TTS] Initialized | rate=175 | offline=true
+2026-05-16 22:14:11.730 | INFO     | voice.stt:__init__:36 - [STT] Loading WhisperModel size='base' (may take 30-60 seconds)...
+2026-05-16 22:14:12.993 | INFO     | voice.stt:__init__:44 - [STT] Whisper model loaded | size=base | device=cpu | offline=true
+2026-05-16 22:14:12.993 | INFO     | __main__:__init__:83 - [VEDA] Building agent graph...
+2026-05-16 22:14:12.993 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:14:12.995 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:14:13.004 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:14:13.004 | INFO     | voice.wake_word:__init__:68 - [WAKE] Detector initialized | wake_word='hey veda' | openwakeword=available
+2026-05-16 22:14:13.005 | INFO     | voice.wake_word:__init__:76 - [WAKE] Downloading OpenWakeWord models (may take 1-2 minutes)...
+2026-05-16 22:14:13.005 | INFO     | voice.wake_word:__init__:78 - [WAKE] Loading OpenWakeWord model...
+2026-05-16 22:14:13.005 | INFO     | voice.wake_word:__init__:89 - [WAKE] Mapping 'hey veda' -> OpenWakeWord model: 'hey_jarvis'
+2026-05-16 22:14:13.005 | INFO     | voice.wake_word:__init__:93 - [WAKE] Whisper phrase fallback enabled for exact phrase: 'hey veda'
+2026-05-16 22:14:13.122 | INFO     | voice.wake_word:__init__:99 - [WAKE] OpenWakeWord model loaded successfully
+2026-05-16 22:14:13.122 | INFO     | __main__:__init__:98 - [VEDA] ✓ All components initialized
+2026-05-16 22:14:13.122 | INFO     | __main__:start:188 - 
+======================================================================
+2026-05-16 22:14:13.122 | INFO     | __main__:start:189 - VEDA IS STARTING...
+2026-05-16 22:14:13.123 | INFO     | __main__:start:190 - ======================================================================
+
+2026-05-16 22:14:13.123 | INFO     | voice.tts:speak:41 - [TTS] Speaking: VEDA is online. Say Hey VEDA to activate me.
+2026-05-16 22:14:17.524 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:14:17.525 | INFO     | __main__:start:198 - [VEDA] ✓ READY - Listening for wake word...
+2026-05-16 22:14:17.525 | INFO     | __main__:start:199 - [VEDA] Say: 'Hey VEDA, what is machine learning?'
+
+2026-05-16 22:14:17.526 | INFO     | voice.wake_word:start_listening:115 - [WAKE] Listening for 'hey veda'...
+2026-05-16 22:14:17.526 | INFO     | voice.wake_word:_log_audio_devices:228 - [WAKE] Available audio devices: 18
+2026-05-16 22:14:17.527 | INFO     | voice.wake_word:_log_audio_devices:231 -   [0] Microsoft Sound Mapper - Input (channels: 2)
+2026-05-16 22:14:17.527 | INFO     | voice.wake_word:_log_audio_devices:231 -   [1] Digital Microphone (Cirrus Logi (channels: 2)
+2026-05-16 22:14:17.527 | INFO     | voice.wake_word:_log_audio_devices:231 -   [4] Primary Sound Capture Driver (channels: 2)
+2026-05-16 22:14:17.527 | INFO     | voice.wake_word:_log_audio_devices:231 -   [5] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:14:17.527 | INFO     | voice.wake_word:_log_audio_devices:231 -   [9] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:14:17.528 | INFO     | voice.wake_word:_log_audio_devices:231 -   [10] Digital Microphone (AudioMiniport Wave Microphone Front) (channels: 2)
+2026-05-16 22:14:17.528 | INFO     | voice.wake_word:_log_audio_devices:231 -   [13] Input (AudioMiniport Wave Speaker) (channels: 2)
+2026-05-16 22:14:17.528 | INFO     | voice.wake_word:_log_audio_devices:231 -   [14] Headset Microphone (AudioMiniport Wave Headset In) (channels: 2)
+2026-05-16 22:14:17.528 | INFO     | voice.wake_word:_log_audio_devices:231 -   [17] Input (AudioMiniport Wave Speaker Headphone) (channels: 2)
+2026-05-16 22:14:17.528 | INFO     | voice.wake_word:_log_audio_devices:235 - [WAKE] Using input device: 1
+2026-05-16 22:14:18.792 | INFO     | voice.wake_word:_listen_sync:147 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:14:20.407 | INFO     | voice.wake_word:_listen_sync:160 - [WAKE] Calibrated noise floor: 0.0038; speech threshold: 0.0250
+2026-05-16 22:14:21.691 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.1990
+2026-05-16 22:14:22.820 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp9kl638x9.wav
+2026-05-16 22:14:23.663 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Hey VEDA.
+2026-05-16 22:14:23.664 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Hey VEDA.' | matched=True
+2026-05-16 22:14:23.733 | INFO     | voice.wake_word:_listen_sync:216 - [WAKE] Wake word triggered by phrase 'hey veda'
+2026-05-16 22:14:23.734 | INFO     | __main__:on_wake_word:109 - [VEDA] Wake word detected!
+2026-05-16 22:14:23.734 | INFO     | voice.tts:speak:41 - [TTS] Speaking: Yes?
+2026-05-16 22:14:25.240 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:14:25.241 | INFO     | __main__:on_wake_word:114 - [VEDA] Prompt sent, listening for input...
+2026-05-16 22:14:25.241 | INFO     | voice.stt:listen_and_transcribe:66 - [STT] Recording for 8 seconds...
+2026-05-16 22:14:25.241 | INFO     | voice.stt:_record_audio:126 - [STT] Starting audio capture
+2026-05-16 22:14:34.616 | INFO     | voice.stt:_record_audio:135 - [STT] Audio captured | samples=128000
+2026-05-16 22:14:34.621 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp18y3pzhd.wav
+2026-05-16 22:14:35.876 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= what is machine learning
+2026-05-16 22:14:35.877 | INFO     | voice.stt:listen_and_transcribe:88 - [STT] Transcribed: ' what is machine learning'
+2026-05-16 22:14:35.877 | INFO     | __main__:on_wake_word:124 - [VEDA] User said: 'what is machine learning'
+2026-05-16 22:14:35.878 | INFO     | voice.tts:speak:41 - [TTS] Speaking: On it.
+2026-05-16 22:14:37.339 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:14:37.339 | INFO     | __main__:on_wake_word:128 - [VEDA] Processing through agent...
+2026-05-16 22:14:37.347 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=5a957d56-3888-4155-a598-9cc953c2da5b
+2026-05-16 22:14:37.347 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=5a957d56-3888-4155-a598-9cc953c2da5b
+2026-05-16 22:14:37.349 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='what is machine learning...'
+2026-05-16 22:15:25.245 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=machine learning | tone=normal | confidence=8/10
+2026-05-16 22:15:25.247 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:15:25.250 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 22:15:40.082 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=272 chars
+2026-05-16 22:15:40.087 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=5a957d56-3888-4155-a598-9cc953c2da5b
+2026-05-16 22:15:40.088 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=5a957d56-3888-4155-a598-9cc953c2da5b
+2026-05-16 22:15:40.089 | INFO     | __main__:on_wake_word:168 - [VEDA] Generated response (272 chars)
+2026-05-16 22:15:40.090 | INFO     | __main__:on_wake_word:171 - [VEDA] Speaking response...
+2026-05-16 22:15:40.090 | INFO     | voice.tts:speak:41 - [TTS] Speaking: Hey there!  Machine learning is like teaching computers to l...
+2026-05-16 22:15:58.699 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:15:58.700 | INFO     | __main__:on_wake_word:173 - [VEDA] Response complete
+2026-05-16 22:16:02.820 | INFO     | voice.wake_word:_listen_sync:147 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:16:03.403 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0617
+2026-05-16 22:16:06.450 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpzshdvw00.wav
+2026-05-16 22:16:09.994 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= I am going to go to the last tips.  I will see you later.
+2026-05-16 22:16:09.995 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='I am going to go to the last tips.  I will see you later.' | matched=False
+2026-05-16 22:16:10.057 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0927
+2026-05-16 22:16:10.157 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.1058 (chunks: 100)
+2026-05-16 22:16:11.694 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp6klrqw5a.wav
+2026-05-16 22:16:14.683 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Okay, then, let's go.
+2026-05-16 22:16:14.685 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Okay, then, let's go.' | matched=False
+2026-05-16 22:16:20.929 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0005 (chunks: 200)
+2026-05-16 22:16:21.740 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0634
+2026-05-16 22:16:23.587 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp7dpld9lh.wav
+2026-05-16 22:16:23.815 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text=
+2026-05-16 22:16:24.560 | INFO     | voice.wake_word:_check_openwakeword:256 - [WAKE] OpenWakeWord 'hey_jarvis' | score=0.327
+2026-05-16 22:16:28.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0040 (chunks: 300)
+2026-05-16 22:16:36.949 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 400)
+2026-05-16 22:16:44.949 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 500)
+2026-05-16 22:16:52.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 600)
+2026-05-16 22:17:00.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0065 (chunks: 700)
+2026-05-16 22:17:08.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0056 (chunks: 800)
+2026-05-16 22:17:16.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0119 (chunks: 900)
+2026-05-16 22:17:24.948 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0075 (chunks: 1000)
+2026-05-16 22:17:32.151 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0531
+2026-05-16 22:17:32.800 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpxjem8flf.wav
+2026-05-16 22:17:33.919 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Hey VEDA.
+2026-05-16 22:17:33.920 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Hey VEDA.' | matched=True
+2026-05-16 22:17:33.997 | INFO     | voice.wake_word:_listen_sync:216 - [WAKE] Wake word triggered by phrase 'hey veda'
+2026-05-16 22:17:33.998 | INFO     | __main__:on_wake_word:109 - [VEDA] Wake word detected!
+2026-05-16 22:17:33.998 | INFO     | voice.tts:speak:41 - [TTS] Speaking: Yes?
+2026-05-16 22:17:35.510 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:17:35.511 | INFO     | __main__:on_wake_word:114 - [VEDA] Prompt sent, listening for input...
+2026-05-16 22:17:35.511 | INFO     | voice.stt:listen_and_transcribe:66 - [STT] Recording for 8 seconds...
+2026-05-16 22:17:35.511 | INFO     | voice.stt:_record_audio:126 - [STT] Starting audio capture
+2026-05-16 22:17:44.833 | INFO     | voice.stt:_record_audio:135 - [STT] Audio captured | samples=128000
+2026-05-16 22:17:44.838 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpjrr5kuxl.wav
+2026-05-16 22:17:47.132 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Thank you very much.
+2026-05-16 22:17:47.133 | INFO     | voice.stt:listen_and_transcribe:88 - [STT] Transcribed: ' Thank you very much.'
+2026-05-16 22:17:47.133 | INFO     | __main__:on_wake_word:124 - [VEDA] User said: 'Thank you very much.'
+2026-05-16 22:17:47.134 | INFO     | voice.tts:speak:41 - [TTS] Speaking: On it.
+2026-05-16 22:17:48.594 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:17:48.595 | INFO     | __main__:on_wake_word:128 - [VEDA] Processing through agent...
+2026-05-16 22:17:48.597 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=f21a4951-1168-4ef1-8db4-4305ec3dcbbe
+2026-05-16 22:17:48.597 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=f21a4951-1168-4ef1-8db4-4305ec3dcbbe
+2026-05-16 22:17:48.598 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='Thank you very much....'
+2026-05-16 22:17:55.288 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=general | topic= | tone=normal | confidence=8/10
+2026-05-16 22:17:55.289 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=general
+2026-05-16 22:17:55.290 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=general | tone=normal
+2026-05-16 22:18:01.913 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=56 chars
+2026-05-16 22:18:01.914 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=f21a4951-1168-4ef1-8db4-4305ec3dcbbe
+2026-05-16 22:18:01.915 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=f21a4951-1168-4ef1-8db4-4305ec3dcbbe
+2026-05-16 22:18:01.916 | INFO     | __main__:on_wake_word:168 - [VEDA] Generated response (56 chars)
+2026-05-16 22:18:01.916 | INFO     | __main__:on_wake_word:171 - [VEDA] Speaking response...
+2026-05-16 22:18:01.916 | INFO     | voice.tts:speak:41 - [TTS] Speaking: You're welcome!  😊 Anything I can help you with today? 
+
+2026-05-16 22:18:07.493 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:18:07.494 | INFO     | __main__:on_wake_word:173 - [VEDA] Response complete
+2026-05-16 22:18:10.438 | INFO     | __main__:shutdown:213 - 
+[VEDA] Shutting down...
+2026-05-16 22:18:10.438 | INFO     | voice.wake_word:stop:284 - [WAKE] Stop requested
+2026-05-16 22:18:10.439 | INFO     | __main__:shutdown:216 - [VEDA] ✓ Shutdown complete
+2026-05-16 22:18:10.742 | INFO     | voice.wake_word:_listen_sync:147 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:18:10.813 | INFO     | voice.wake_word:_listen_sync:223 - [WAKE] Listening stopped

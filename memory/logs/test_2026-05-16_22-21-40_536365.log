@@ -1,0 +1,81 @@
+2026-05-16 22:21:40.538 | INFO     | __main__:main:151 - 
+
+
+2026-05-16 22:21:40.538 | INFO     | __main__:main:152 - ######################################################################
+2026-05-16 22:21:40.538 | INFO     | __main__:main:153 - # VEDA BASIC END-TO-END TESTS
+2026-05-16 22:21:40.538 | INFO     | __main__:main:154 - ######################################################################
+2026-05-16 22:21:40.538 | INFO     | __main__:test_basic_query:24 - 
+======================================================================
+2026-05-16 22:21:40.538 | INFO     | __main__:test_basic_query:25 - TEST: Basic Query
+2026-05-16 22:21:40.538 | INFO     | __main__:test_basic_query:26 - ======================================================================
+2026-05-16 22:21:40.540 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:21:40.540 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:21:40.547 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:21:40.547 | INFO     | __main__:test_basic_query:63 - [TEST] Input: What is LangGraph?
+2026-05-16 22:21:40.547 | INFO     | __main__:test_basic_query:64 - [TEST] Session: 63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:21:40.547 | INFO     | __main__:test_basic_query:68 - [TEST] Invoking agent graph...
+2026-05-16 22:21:40.550 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:21:42.851 | WARNING  | memory.hindsight_store:_ensure_bank:130 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:21:42.851 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:21:42.853 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='What is LangGraph?...'
+2026-05-16 22:21:49.657 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=LangGraph | tone=normal | confidence=8/10
+2026-05-16 22:21:49.658 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:21:49.659 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 22:22:01.640 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=467 chars
+2026-05-16 22:22:01.641 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:22:03.940 | WARNING  | memory.hindsight_store:_ensure_bank:130 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:22:03.942 | INFO     | memory.hindsight_store:end_session:343 - [HINDSIGHT] Reflect threshold reached (every 3 sessions) | triggering reflect | session=63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:22:06.247 | WARNING  | memory.hindsight_store:_ensure_bank:130 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:22:06.247 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=63096563-6c29-4b3a-8b6b-9c94c852f535
+2026-05-16 22:22:06.247 | INFO     | __main__:test_basic_query:72 - [TEST] Graph execution complete
+2026-05-16 22:22:06.248 | INFO     | __main__:test_basic_query:73 - [TEST] Intent: research
+2026-05-16 22:22:06.248 | INFO     | __main__:test_basic_query:74 - [TEST] Tone: normal
+2026-05-16 22:22:06.248 | INFO     | __main__:test_basic_query:75 - [TEST] Confidence: 8
+2026-05-16 22:22:06.248 | INFO     | __main__:test_basic_query:79 - 
+[TEST] ✓ RESPONSE RECEIVED:
+LangGraph is an interesting project in the world of AI!  It's all about understanding and working with text. Think of it like a super smart search engine for language, but instead of just finding keywords, it actually understands the meaning behind them. 🤯 It uses graph-based techniques to analyze relationships between words and ideas, which helps it answer complex questions and generate creative content.  
+
+Do you want to know more about how LangGraph works? 😊 
+
+
+2026-05-16 22:22:06.249 | INFO     | __main__:test_research_query:94 - 
+======================================================================
+2026-05-16 22:22:06.249 | INFO     | __main__:test_research_query:95 - TEST: Research Query
+2026-05-16 22:22:06.249 | INFO     | __main__:test_research_query:96 - ======================================================================
+2026-05-16 22:22:06.250 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:22:06.251 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:22:06.260 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:22:06.260 | INFO     | __main__:test_research_query:131 - [TEST] Input: Explain machine learning concepts
+2026-05-16 22:22:06.261 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=ed4904a0-130b-4de1-bd7b-200e11de3d4a
+2026-05-16 22:22:08.575 | WARNING  | memory.hindsight_store:_ensure_bank:130 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:22:08.575 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=ed4904a0-130b-4de1-bd7b-200e11de3d4a
+2026-05-16 22:22:08.577 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='Explain machine learning concepts...'
+2026-05-16 22:22:15.374 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=machine learning | tone=normal | confidence=8/10
+2026-05-16 22:22:15.375 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:22:15.376 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 22:22:32.269 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=779 chars
+2026-05-16 22:22:32.270 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=ed4904a0-130b-4de1-bd7b-200e11de3d4a
+2026-05-16 22:22:34.558 | WARNING  | memory.hindsight_store:_ensure_bank:130 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:22:34.559 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=ed4904a0-130b-4de1-bd7b-200e11de3d4a
+2026-05-16 22:22:34.559 | INFO     | __main__:test_research_query:138 - 
+[TEST] ✓ RESPONSE RECEIVED:
+Hey there!  So you want to learn about machine learning? Cool! It's basically teaching computers how to learn from data without being explicitly programmed. 🧠 
+
+Think of it like this: instead of giving a computer step-by-step instructions on how to recognize cats, we feed it tons of pictures and labels ("cat" or "not cat").  The computer then uses that data to figure out what makes something a cat on its own! 🎉
+
+There are different types of machine learning, like supervised learning (like the cat example) where you give the computer labeled examples, unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning by trial and error). 
+
+It's pretty mind-blowing stuff, right?  Do you want to dive deeper into any specific aspect of it? 🤔 
+
+
+2026-05-16 22:22:34.560 | INFO     | __main__:main:175 - 
+======================================================================
+2026-05-16 22:22:34.560 | INFO     | __main__:main:176 - TEST SUMMARY
+2026-05-16 22:22:34.560 | INFO     | __main__:main:177 - ======================================================================
+2026-05-16 22:22:34.560 | INFO     | __main__:main:184 - ✓ PASS | Basic Query
+2026-05-16 22:22:34.560 | INFO     | __main__:main:184 - ✓ PASS | Research Query
+2026-05-16 22:22:34.560 | INFO     | __main__:main:186 - 
+Total: 2/2 passed
+2026-05-16 22:22:34.560 | INFO     | __main__:main:189 - 
+✓ ALL TESTS PASSED - VEDA AGENT WORKING!
+

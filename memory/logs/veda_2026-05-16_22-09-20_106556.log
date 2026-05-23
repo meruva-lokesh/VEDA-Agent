@@ -1,0 +1,120 @@
+2026-05-16 22:09:22.918 | WARNING  | memory.hindsight_store:__init__:58 - [HINDSIGHT] Disabled via settings — skipping init
+2026-05-16 22:09:23.298 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:09:23.299 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:09:23.307 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:09:23.307 | INFO     | __main__:<module>:234 - [MAIN] Starting VEDA...
+2026-05-16 22:09:23.309 | INFO     | __main__:__init__:66 - [VEDA] Initializing...
+2026-05-16 22:09:23.309 | INFO     | __main__:__init__:78 - [VEDA] Initializing real voice components
+2026-05-16 22:09:23.311 | INFO     | voice.tts:__init__:20 - [TTS] Initialized | rate=175 | offline=true
+2026-05-16 22:09:23.311 | INFO     | voice.stt:__init__:36 - [STT] Loading WhisperModel size='base' (may take 30-60 seconds)...
+2026-05-16 22:09:24.467 | INFO     | voice.stt:__init__:44 - [STT] Whisper model loaded | size=base | device=cpu | offline=true
+2026-05-16 22:09:24.468 | INFO     | __main__:__init__:83 - [VEDA] Building agent graph...
+2026-05-16 22:09:24.468 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:09:24.469 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:09:24.480 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:09:24.481 | INFO     | voice.wake_word:__init__:62 - [WAKE] Detector initialized | wake_word='hey veda' | openwakeword=available
+2026-05-16 22:09:24.481 | INFO     | voice.wake_word:__init__:70 - [WAKE] Downloading OpenWakeWord models (may take 1-2 minutes)...
+2026-05-16 22:09:24.481 | INFO     | voice.wake_word:__init__:72 - [WAKE] Loading OpenWakeWord model...
+2026-05-16 22:09:24.482 | INFO     | voice.wake_word:__init__:83 - [WAKE] Mapping 'hey veda' -> OpenWakeWord model: 'hey_jarvis'
+2026-05-16 22:09:24.482 | INFO     | voice.wake_word:__init__:87 - [WAKE] Whisper phrase fallback enabled for exact phrase: 'hey veda'
+2026-05-16 22:09:24.653 | INFO     | voice.wake_word:__init__:93 - [WAKE] OpenWakeWord model loaded successfully
+2026-05-16 22:09:24.653 | INFO     | __main__:__init__:98 - [VEDA] ✓ All components initialized
+2026-05-16 22:09:24.654 | INFO     | __main__:start:188 - 
+======================================================================
+2026-05-16 22:09:24.654 | INFO     | __main__:start:189 - VEDA IS STARTING...
+2026-05-16 22:09:24.654 | INFO     | __main__:start:190 - ======================================================================
+
+2026-05-16 22:09:24.654 | INFO     | voice.tts:speak:41 - [TTS] Speaking: VEDA is online. Say Hey VEDA to activate me.
+2026-05-16 22:09:29.066 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:09:29.067 | INFO     | __main__:start:198 - [VEDA] ✓ READY - Listening for wake word...
+2026-05-16 22:09:29.067 | INFO     | __main__:start:199 - [VEDA] Say: 'Hey VEDA, what is machine learning?'
+
+2026-05-16 22:09:29.068 | INFO     | voice.wake_word:start_listening:109 - [WAKE] Listening for 'hey veda'...
+2026-05-16 22:09:29.088 | INFO     | voice.wake_word:_log_audio_devices:189 - [WAKE] Available audio devices: 18
+2026-05-16 22:09:29.089 | INFO     | voice.wake_word:_log_audio_devices:192 -   [0] Microsoft Sound Mapper - Input (channels: 2)
+2026-05-16 22:09:29.089 | INFO     | voice.wake_word:_log_audio_devices:192 -   [1] Digital Microphone (Cirrus Logi (channels: 2)
+2026-05-16 22:09:29.089 | INFO     | voice.wake_word:_log_audio_devices:192 -   [4] Primary Sound Capture Driver (channels: 2)
+2026-05-16 22:09:29.090 | INFO     | voice.wake_word:_log_audio_devices:192 -   [5] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:09:29.090 | INFO     | voice.wake_word:_log_audio_devices:192 -   [9] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:09:29.090 | INFO     | voice.wake_word:_log_audio_devices:192 -   [10] Digital Microphone (AudioMiniport Wave Microphone Front) (channels: 2)
+2026-05-16 22:09:29.090 | INFO     | voice.wake_word:_log_audio_devices:192 -   [13] Input (AudioMiniport Wave Speaker) (channels: 2)
+2026-05-16 22:09:29.091 | INFO     | voice.wake_word:_log_audio_devices:192 -   [14] Headset Microphone (AudioMiniport Wave Headset In) (channels: 2)
+2026-05-16 22:09:29.091 | INFO     | voice.wake_word:_log_audio_devices:192 -   [17] Input (AudioMiniport Wave Speaker Headphone) (channels: 2)
+2026-05-16 22:09:29.091 | INFO     | voice.wake_word:_log_audio_devices:195 - [WAKE] Using default input device: 1
+2026-05-16 22:09:30.375 | INFO     | voice.wake_word:_listen_sync:138 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:09:31.091 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmppn99hoxq.wav
+2026-05-16 22:09:33.459 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey
+2026-05-16 22:09:33.460 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey' | matched=False
+2026-05-16 22:09:33.481 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpesb5i7k3.wav
+2026-05-16 22:09:34.669 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey
+2026-05-16 22:09:34.670 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey' | matched=False
+2026-05-16 22:09:34.758 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpni7jffc7.wav
+2026-05-16 22:09:36.001 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, well
+2026-05-16 22:09:36.001 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, well' | matched=False
+2026-05-16 22:09:36.336 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp48va4e_u.wav
+2026-05-16 22:09:38.515 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= hey
+2026-05-16 22:09:38.516 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='hey' | matched=False
+2026-05-16 22:09:38.850 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpuzrjvo3_.wav
+2026-05-16 22:09:40.047 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Here it is.
+2026-05-16 22:09:40.047 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Here it is.' | matched=False
+2026-05-16 22:09:40.699 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp0_wbkc8v.wav
+2026-05-16 22:09:41.993 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, well
+2026-05-16 22:09:41.994 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, well' | matched=False
+2026-05-16 22:09:42.012 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp07m39y6v.wav
+2026-05-16 22:09:43.450 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, well
+2026-05-16 22:09:43.451 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, well' | matched=False
+2026-05-16 22:09:43.498 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpmvnt4m_0.wav
+2026-05-16 22:09:48.763 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, wait.  Hey, wait.  What is this?  This is a...
+2026-05-16 22:09:48.764 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, wait.  Hey, wait.  What is this?  This is a...' | matched=False
+2026-05-16 22:09:53.166 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0009 (chunks: 100)
+2026-05-16 22:09:59.734 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpl0u4hwep.wav
+2026-05-16 22:10:01.037 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:10:01.057 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpt1kqneyh.wav
+2026-05-16 22:10:03.290 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Okay.
+2026-05-16 22:10:03.291 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Okay.' | matched=False
+2026-05-16 22:10:03.314 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpzy6is_5x.wav
+2026-05-16 22:10:05.825 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey.
+2026-05-16 22:10:05.826 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey.' | matched=False
+2026-05-16 22:10:05.848 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpupyk8upv.wav
+2026-05-16 22:10:08.513 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey.
+2026-05-16 22:10:08.514 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey.' | matched=False
+2026-05-16 22:10:08.534 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp4yswv790.wav
+2026-05-16 22:10:10.857 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, man.
+2026-05-16 22:10:10.858 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, man.' | matched=False
+2026-05-16 22:10:10.879 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmph8hrxphg.wav
+2026-05-16 22:10:13.186 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, man.
+2026-05-16 22:10:13.187 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, man.' | matched=False
+2026-05-16 22:10:13.224 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp_9c3izp0.wav
+2026-05-16 22:10:15.589 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, babe.  Hey, babe.
+2026-05-16 22:10:15.590 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, babe.  Hey, babe.' | matched=False
+2026-05-16 22:10:15.611 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpsosnucuh.wav
+2026-05-16 22:10:18.483 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= Hey, man.
+2026-05-16 22:10:18.484 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='Hey, man.' | matched=False
+2026-05-16 22:10:19.047 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0111 (chunks: 200)
+2026-05-16 22:10:27.047 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0010 (chunks: 300)
+2026-05-16 22:10:27.535 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpjrelgui3.wav
+2026-05-16 22:10:28.789 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= You
+2026-05-16 22:10:28.790 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='You' | matched=False
+2026-05-16 22:10:33.766 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpqqdmat6c.wav
+2026-05-16 22:10:35.085 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:10:35.819 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpud2yuuta.wav
+2026-05-16 22:10:39.107 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text= I'm sorry.  I'm sorry.  I'm sorry.
+2026-05-16 22:10:39.107 | INFO     | voice.stt:contains_wake_word:110 - [STT] Wake phrase check | text='I'm sorry.  I'm sorry.  I'm sorry.' | matched=False
+2026-05-16 22:10:40.229 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0015 (chunks: 400)
+2026-05-16 22:10:48.229 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0003 (chunks: 500)
+2026-05-16 22:10:55.761 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp9yexxww7.wav
+2026-05-16 22:10:57.111 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:10:57.132 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp_qt1eoln.wav
+2026-05-16 22:10:58.720 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:10:58.770 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpz2n7td3e.wav
+2026-05-16 22:11:00.142 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:11:00.170 | DEBUG    | voice.wake_word:_listen_sync:152 - [WAKE] Audio level: 0.0047 (chunks: 600)
+2026-05-16 22:11:00.192 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp1ug6z59y.wav
+2026-05-16 22:11:01.535 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:11:01.556 | INFO     | voice.stt:_transcribe:151 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp_9mjuzxo.wav
+2026-05-16 22:11:01.787 | INFO     | __main__:shutdown:213 - 
+[VEDA] Shutting down...
+2026-05-16 22:11:01.787 | INFO     | voice.wake_word:stop:232 - [WAKE] Stop requested
+2026-05-16 22:11:01.787 | INFO     | __main__:shutdown:216 - [VEDA] ✓ Shutdown complete
+2026-05-16 22:11:02.875 | INFO     | voice.stt:_transcribe:160 - [STT] Transcription complete | text=
+2026-05-16 22:11:02.949 | INFO     | voice.wake_word:_listen_sync:184 - [WAKE] Listening stopped

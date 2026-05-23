@@ -1,0 +1,76 @@
+2026-05-16 22:18:51.123 | INFO     | __main__:main:151 - 
+
+
+2026-05-16 22:18:51.123 | INFO     | __main__:main:152 - ######################################################################
+2026-05-16 22:18:51.123 | INFO     | __main__:main:153 - # VEDA BASIC END-TO-END TESTS
+2026-05-16 22:18:51.123 | INFO     | __main__:main:154 - ######################################################################
+2026-05-16 22:18:51.123 | INFO     | __main__:test_basic_query:24 - 
+======================================================================
+2026-05-16 22:18:51.123 | INFO     | __main__:test_basic_query:25 - TEST: Basic Query
+2026-05-16 22:18:51.123 | INFO     | __main__:test_basic_query:26 - ======================================================================
+2026-05-16 22:18:51.124 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:18:51.125 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:18:51.132 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:18:51.133 | INFO     | __main__:test_basic_query:63 - [TEST] Input: What is LangGraph?
+2026-05-16 22:18:51.133 | INFO     | __main__:test_basic_query:64 - [TEST] Session: 3704d867-4af2-47b2-8611-fef715c21593
+2026-05-16 22:18:51.133 | INFO     | __main__:test_basic_query:68 - [TEST] Invoking agent graph...
+2026-05-16 22:18:51.138 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=3704d867-4af2-47b2-8611-fef715c21593
+2026-05-16 22:18:51.138 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=3704d867-4af2-47b2-8611-fef715c21593
+2026-05-16 22:18:51.139 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='What is LangGraph?...'
+2026-05-16 22:18:57.858 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=LangGraph | tone=normal | confidence=8/10
+2026-05-16 22:18:57.859 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:18:57.860 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 22:19:09.277 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=436 chars
+2026-05-16 22:19:09.278 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=3704d867-4af2-47b2-8611-fef715c21593
+2026-05-16 22:19:09.279 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=3704d867-4af2-47b2-8611-fef715c21593
+2026-05-16 22:19:09.279 | INFO     | __main__:test_basic_query:72 - [TEST] Graph execution complete
+2026-05-16 22:19:09.279 | INFO     | __main__:test_basic_query:73 - [TEST] Intent: research
+2026-05-16 22:19:09.280 | INFO     | __main__:test_basic_query:74 - [TEST] Tone: normal
+2026-05-16 22:19:09.280 | INFO     | __main__:test_basic_query:75 - [TEST] Confidence: 8
+2026-05-16 22:19:09.280 | INFO     | __main__:test_basic_query:79 - 
+[TEST] ✓ RESPONSE RECEIVED:
+LangGraph is an interesting project in the world of AI.  Think of it as a way for computers to understand and work with information like humans do, by connecting different pieces of text together. 
+
+It's kind of like building a giant web of knowledge where each piece of text is connected to others based on meaning and context. This helps them answer questions more comprehensively and even generate new content!  Pretty cool, right? 
+
+
+2026-05-16 22:19:09.280 | INFO     | __main__:test_research_query:94 - 
+======================================================================
+2026-05-16 22:19:09.280 | INFO     | __main__:test_research_query:95 - TEST: Research Query
+2026-05-16 22:19:09.280 | INFO     | __main__:test_research_query:96 - ======================================================================
+2026-05-16 22:19:09.280 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:19:09.281 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:19:09.289 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:19:09.289 | INFO     | __main__:test_research_query:131 - [TEST] Input: Explain machine learning concepts
+2026-05-16 22:19:09.290 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=cf22352b-3ff0-4f8f-b2c0-b1d0886ce559
+2026-05-16 22:19:09.290 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=cf22352b-3ff0-4f8f-b2c0-b1d0886ce559
+2026-05-16 22:19:09.290 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='Explain machine learning concepts...'
+2026-05-16 22:19:16.048 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=machine learning | tone=normal | confidence=8/10
+2026-05-16 22:19:16.049 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:19:16.050 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=normal
+2026-05-16 22:19:34.350 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=877 chars
+2026-05-16 22:19:34.352 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=cf22352b-3ff0-4f8f-b2c0-b1d0886ce559
+2026-05-16 22:19:34.353 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:96 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=cf22352b-3ff0-4f8f-b2c0-b1d0886ce559
+2026-05-16 22:19:34.353 | INFO     | __main__:test_research_query:138 - 
+[TEST] ✓ RESPONSE RECEIVED:
+Hey there!  So you want to know about machine learning? Cool! It's basically teaching computers how to learn from data without being explicitly programmed. 🤯
+
+Think of it like this: imagine training a dog. You show them pictures of cats and say "cat," then reward them when they get it right. Over time, the dog learns what makes something a cat.  Machine learning works kind of like that! We give computers tons of data (like images or numbers) and algorithms (the rules for how to learn) help them find patterns and make predictions. 
+
+There are different types of machine learning: supervised learning (where we have labeled data, like pictures of cats with labels), unsupervised learning (finding patterns in unlabeled data), and reinforcement learning (learning from trial and error).  Pretty wild stuff! 
+
+
+Do you want to dive deeper into any specific type or aspect? 😊 
+
+
+2026-05-16 22:19:34.353 | INFO     | __main__:main:175 - 
+======================================================================
+2026-05-16 22:19:34.353 | INFO     | __main__:main:176 - TEST SUMMARY
+2026-05-16 22:19:34.353 | INFO     | __main__:main:177 - ======================================================================
+2026-05-16 22:19:34.354 | INFO     | __main__:main:184 - ✓ PASS | Basic Query
+2026-05-16 22:19:34.354 | INFO     | __main__:main:184 - ✓ PASS | Research Query
+2026-05-16 22:19:34.354 | INFO     | __main__:main:186 - 
+Total: 2/2 passed
+2026-05-16 22:19:34.354 | INFO     | __main__:main:189 - 
+✓ ALL TESTS PASSED - VEDA AGENT WORKING!
+

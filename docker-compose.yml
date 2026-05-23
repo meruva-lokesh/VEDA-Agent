@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  hindsight:
+    image: ghcr.io/vectorize-io/hindsight:latest
+    container_name: hindsight-veda
+    ports:
+      - "8888:8888" # API
+      - "9999:9999" # UI
+    environment:
+      HINDSIGHT_API_LLM_PROVIDER: "ollama"
+      HINDSIGHT_API_LLM_API_KEY: "ollama"
+      HINDSIGHT_API_LLM_BASE_URL: "http://host.docker.internal:11434"
+      HINDSIGHT_API_LLM_MODEL: "gemma2:2b"
+    volumes:
+      - hindsight_data:/home/hindsight/.pg0
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  hindsight_data:
+    driver: local

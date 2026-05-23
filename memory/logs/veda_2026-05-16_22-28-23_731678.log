@@ -1,0 +1,192 @@
+2026-05-16 22:28:26.440 | INFO     | memory.hindsight_store:__init__:89 - [HINDSIGHT] Initialised | mode=local | bank=veda | url=http://localhost:8888 | sessions_so_far=6
+2026-05-16 22:28:26.778 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:28:26.780 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:28:26.788 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:28:26.789 | INFO     | __main__:<module>:234 - [MAIN] Starting VEDA...
+2026-05-16 22:28:26.790 | INFO     | __main__:__init__:66 - [VEDA] Initializing...
+2026-05-16 22:28:26.791 | INFO     | __main__:__init__:78 - [VEDA] Initializing real voice components
+2026-05-16 22:28:26.792 | INFO     | voice.tts:__init__:20 - [TTS] Initialized | rate=175 | offline=true
+2026-05-16 22:28:26.792 | INFO     | voice.stt:__init__:36 - [STT] Loading WhisperModel size='base' (may take 30-60 seconds)...
+2026-05-16 22:28:27.992 | INFO     | voice.stt:__init__:44 - [STT] Whisper model loaded | size=base | device=cpu | offline=true
+2026-05-16 22:28:27.992 | INFO     | __main__:__init__:83 - [VEDA] Building agent graph...
+2026-05-16 22:28:27.993 | INFO     | agent.graph:build_graph:56 - [GRAPH] Building VEDA agent graph...
+2026-05-16 22:28:27.994 | INFO     | agent.graph:build_graph:90 - [GRAPH] Compiling graph (in-memory checkpointing)...
+2026-05-16 22:28:28.004 | INFO     | agent.graph:build_graph:94 - [GRAPH] ✓ Graph built and compiled successfully
+2026-05-16 22:28:28.004 | INFO     | voice.wake_word:__init__:68 - [WAKE] Detector initialized | wake_word='hey veda' | openwakeword=available
+2026-05-16 22:28:28.004 | INFO     | voice.wake_word:__init__:76 - [WAKE] Downloading OpenWakeWord models (may take 1-2 minutes)...
+2026-05-16 22:28:28.004 | INFO     | voice.wake_word:__init__:78 - [WAKE] Loading OpenWakeWord model...
+2026-05-16 22:28:28.004 | INFO     | voice.wake_word:__init__:89 - [WAKE] Mapping 'hey veda' -> OpenWakeWord model: 'hey_jarvis'
+2026-05-16 22:28:28.005 | INFO     | voice.wake_word:__init__:93 - [WAKE] Whisper phrase fallback enabled for exact phrase: 'hey veda'
+2026-05-16 22:28:28.215 | INFO     | voice.wake_word:__init__:99 - [WAKE] OpenWakeWord model loaded successfully
+2026-05-16 22:28:28.216 | INFO     | __main__:__init__:98 - [VEDA] ✓ All components initialized
+2026-05-16 22:28:28.216 | INFO     | __main__:start:188 - 
+======================================================================
+2026-05-16 22:28:28.217 | INFO     | __main__:start:189 - VEDA IS STARTING...
+2026-05-16 22:28:28.217 | INFO     | __main__:start:190 - ======================================================================
+
+2026-05-16 22:28:28.217 | INFO     | voice.tts:speak:41 - [TTS] Speaking: VEDA is online. Say Hey VEDA to activate me.
+2026-05-16 22:28:32.637 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:28:32.637 | INFO     | __main__:start:198 - [VEDA] ✓ READY - Listening for wake word...
+2026-05-16 22:28:32.638 | INFO     | __main__:start:199 - [VEDA] Say: 'Hey VEDA, what is machine learning?'
+
+2026-05-16 22:28:32.638 | INFO     | voice.wake_word:start_listening:115 - [WAKE] Listening for 'hey veda'...
+2026-05-16 22:28:32.639 | INFO     | voice.wake_word:_log_audio_devices:228 - [WAKE] Available audio devices: 18
+2026-05-16 22:28:32.639 | INFO     | voice.wake_word:_log_audio_devices:231 -   [0] Microsoft Sound Mapper - Input (channels: 2)
+2026-05-16 22:28:32.640 | INFO     | voice.wake_word:_log_audio_devices:231 -   [1] Digital Microphone (Cirrus Logi (channels: 2)
+2026-05-16 22:28:32.640 | INFO     | voice.wake_word:_log_audio_devices:231 -   [4] Primary Sound Capture Driver (channels: 2)
+2026-05-16 22:28:32.640 | INFO     | voice.wake_word:_log_audio_devices:231 -   [5] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:28:32.640 | INFO     | voice.wake_word:_log_audio_devices:231 -   [9] Digital Microphone (Cirrus Logic High Definition Audio) (channels: 2)
+2026-05-16 22:28:32.641 | INFO     | voice.wake_word:_log_audio_devices:231 -   [10] Digital Microphone (AudioMiniport Wave Microphone Front) (channels: 2)
+2026-05-16 22:28:32.641 | INFO     | voice.wake_word:_log_audio_devices:231 -   [13] Input (AudioMiniport Wave Speaker) (channels: 2)
+2026-05-16 22:28:32.641 | INFO     | voice.wake_word:_log_audio_devices:231 -   [14] Headset Microphone (AudioMiniport Wave Headset In) (channels: 2)
+2026-05-16 22:28:32.641 | INFO     | voice.wake_word:_log_audio_devices:231 -   [17] Input (AudioMiniport Wave Speaker Headphone) (channels: 2)
+2026-05-16 22:28:32.642 | INFO     | voice.wake_word:_log_audio_devices:235 - [WAKE] Using input device: 1
+2026-05-16 22:28:33.881 | INFO     | voice.wake_word:_listen_sync:147 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:28:35.495 | INFO     | voice.wake_word:_listen_sync:160 - [WAKE] Calibrated noise floor: 0.0040; speech threshold: 0.0250
+2026-05-16 22:28:41.895 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 100)
+2026-05-16 22:28:46.782 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.1111
+2026-05-16 22:28:47.749 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmproqclaka.wav
+2026-05-16 22:28:48.489 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Hey VEDA.
+2026-05-16 22:28:48.490 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Hey VEDA.' | matched=True
+2026-05-16 22:28:48.563 | INFO     | voice.wake_word:_listen_sync:216 - [WAKE] Wake word triggered by phrase 'hey veda'
+2026-05-16 22:28:48.564 | INFO     | __main__:on_wake_word:109 - [VEDA] Wake word detected!
+2026-05-16 22:28:48.564 | INFO     | voice.tts:speak:41 - [TTS] Speaking: Yes?
+2026-05-16 22:28:50.022 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:28:50.022 | INFO     | __main__:on_wake_word:114 - [VEDA] Prompt sent, listening for input...
+2026-05-16 22:28:50.022 | INFO     | voice.stt:listen_and_transcribe:66 - [STT] Recording for 8 seconds...
+2026-05-16 22:28:50.022 | INFO     | voice.stt:_record_audio:126 - [STT] Starting audio capture
+2026-05-16 22:28:59.341 | INFO     | voice.stt:_record_audio:135 - [STT] Audio captured | samples=128000
+2026-05-16 22:28:59.346 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmp5ko6vitr.wav
+2026-05-16 22:29:00.803 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= へ veda,Remember that i am preparing for a vectorized AI int
+2026-05-16 22:29:00.806 | INFO     | voice.stt:listen_and_transcribe:88 - [STT] Transcribed: ' へ veda,Remember that i am preparing for a vectorized AI interview and i prefer concise technical answers.'
+2026-05-16 22:29:00.806 | INFO     | __main__:on_wake_word:124 - [VEDA] User said: 'へ veda,Remember that i am preparing for a vectorized AI interview and i prefer concise technical answers.'
+2026-05-16 22:29:00.806 | INFO     | voice.tts:speak:41 - [TTS] Speaking: On it.
+2026-05-16 22:29:02.210 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:29:02.210 | INFO     | __main__:on_wake_word:128 - [VEDA] Processing through agent...
+2026-05-16 22:29:02.214 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:42 - [NODE: hindsight_recall] Starting | session=e9213892-e303-44fc-b044-3d8f9dbb2006
+2026-05-16 22:29:04.493 | WARNING  | memory.hindsight_store:_ensure_bank:139 - [HINDSIGHT] Could not create/check bank: Cannot connect to host localhost:8888 ssl:default [The remote computer refused the network connection]
+2026-05-16 22:29:04.493 | INFO     | agent.nodes.hindsight_recall:hindsight_recall:52 - [NODE: hindsight_recall] Complete | memories_injected=0 | session=e9213892-e303-44fc-b044-3d8f9dbb2006
+2026-05-16 22:29:04.494 | INFO     | agent.nodes.intent_router:intent_router:67 - [NODE: intent_router] START | message='へ veda,Remember that i am preparing for a vectoriz...'
+2026-05-16 22:29:11.525 | INFO     | agent.nodes.intent_router:intent_router:113 - [NODE: intent_router] CLASSIFIED | intent=research | topic=vectorized AI interview preparation | tone=calm | confidence=8/10
+2026-05-16 22:29:11.526 | INFO     | agent.graph:route_by_intent:40 - [GRAPH] route_by_intent | intent=research
+2026-05-16 22:29:11.527 | INFO     | agent.nodes.writer:writer:44 - [NODE: writer] START | intent=research | tone=calm
+2026-05-16 22:29:21.372 | INFO     | agent.nodes.writer:writer:92 - [NODE: writer] COMPLETE | response_length=204 chars
+2026-05-16 22:29:21.374 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:80 - [NODE: hindsight_retain] Starting | session=e9213892-e303-44fc-b044-3d8f9dbb2006
+2026-05-16 22:29:21.374 | INFO     | agent.nodes.hindsight_retain:hindsight_retain:98 - [NODE: hindsight_retain] Complete | retained=False | reflected=False | session=e9213892-e303-44fc-b044-3d8f9dbb2006
+2026-05-16 22:29:21.374 | INFO     | __main__:on_wake_word:168 - [VEDA] Generated response (204 chars)
+2026-05-16 22:29:21.374 | INFO     | __main__:on_wake_word:171 - [VEDA] Speaking response...
+2026-05-16 22:29:21.374 | INFO     | voice.tts:speak:41 - [TTS] Speaking: Hey there!  I hear you're prepping for a vectorized AI inter...
+2026-05-16 22:29:36.376 | INFO     | voice.tts:speak:47 - [TTS] Speech complete
+2026-05-16 22:29:36.376 | INFO     | __main__:on_wake_word:173 - [VEDA] Response complete
+2026-05-16 22:29:39.574 | INFO     | voice.wake_word:_listen_sync:147 - [WAKE] Audio stream opened - listening for wake word...
+2026-05-16 22:29:41.748 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 200)
+2026-05-16 22:29:44.797 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0876
+2026-05-16 22:29:46.718 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpqcm5sdiq.wav
+2026-05-16 22:29:47.425 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Give me technical address on ml.
+2026-05-16 22:29:47.426 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Give me technical address on ml.' | matched=False
+2026-05-16 22:29:47.513 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0296
+2026-05-16 22:29:48.560 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmprg989zl8.wav
+2026-05-16 22:29:50.509 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text= Techniques and answers.
+2026-05-16 22:29:50.510 | INFO     | voice.stt:contains_wake_word:112 - [STT] Wake phrase check | text='Techniques and answers.' | matched=False
+2026-05-16 22:29:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 300)
+2026-05-16 22:29:59.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0007 (chunks: 400)
+2026-05-16 22:30:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 500)
+2026-05-16 22:30:15.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 600)
+2026-05-16 22:30:23.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 700)
+2026-05-16 22:30:31.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0006 (chunks: 800)
+2026-05-16 22:30:39.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0007 (chunks: 900)
+2026-05-16 22:30:47.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1000)
+2026-05-16 22:30:55.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1100)
+2026-05-16 22:31:03.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1200)
+2026-05-16 22:31:11.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1300)
+2026-05-16 22:31:19.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0007 (chunks: 1400)
+2026-05-16 22:31:27.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0010 (chunks: 1500)
+2026-05-16 22:31:35.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1600)
+2026-05-16 22:31:43.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1700)
+2026-05-16 22:31:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 1800)
+2026-05-16 22:31:59.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0012 (chunks: 1900)
+2026-05-16 22:32:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2000)
+2026-05-16 22:32:15.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0107 (chunks: 2100)
+2026-05-16 22:32:23.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2200)
+2026-05-16 22:32:31.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0198 (chunks: 2300)
+2026-05-16 22:32:39.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0034 (chunks: 2400)
+2026-05-16 22:32:47.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2500)
+2026-05-16 22:32:55.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2600)
+2026-05-16 22:33:03.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0022 (chunks: 2700)
+2026-05-16 22:33:11.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2800)
+2026-05-16 22:33:19.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 2900)
+2026-05-16 22:33:27.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3000)
+2026-05-16 22:33:35.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3100)
+2026-05-16 22:33:43.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0004 (chunks: 3200)
+2026-05-16 22:33:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0021 (chunks: 3300)
+2026-05-16 22:33:59.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3400)
+2026-05-16 22:34:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3500)
+2026-05-16 22:34:15.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3600)
+2026-05-16 22:34:23.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 3700)
+2026-05-16 22:34:31.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0039 (chunks: 3800)
+2026-05-16 22:34:39.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0018 (chunks: 3900)
+2026-05-16 22:34:47.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0004 (chunks: 4000)
+2026-05-16 22:34:55.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 4100)
+2026-05-16 22:35:03.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0004 (chunks: 4200)
+2026-05-16 22:35:11.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0018 (chunks: 4300)
+2026-05-16 22:35:19.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0035 (chunks: 4400)
+2026-05-16 22:35:27.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0014 (chunks: 4500)
+2026-05-16 22:35:35.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 4600)
+2026-05-16 22:35:43.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 4700)
+2026-05-16 22:35:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 4800)
+2026-05-16 22:35:59.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 4900)
+2026-05-16 22:36:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5000)
+2026-05-16 22:36:15.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5100)
+2026-05-16 22:36:23.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5200)
+2026-05-16 22:36:31.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0042 (chunks: 5300)
+2026-05-16 22:36:39.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0007 (chunks: 5400)
+2026-05-16 22:36:47.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5500)
+2026-05-16 22:36:55.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5600)
+2026-05-16 22:37:03.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 5700)
+2026-05-16 22:37:11.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0020 (chunks: 5800)
+2026-05-16 22:37:19.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0025 (chunks: 5900)
+2026-05-16 22:37:27.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0019 (chunks: 6000)
+2026-05-16 22:37:35.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6100)
+2026-05-16 22:37:43.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0016 (chunks: 6200)
+2026-05-16 22:37:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6300)
+2026-05-16 22:37:59.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0008 (chunks: 6400)
+2026-05-16 22:38:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6500)
+2026-05-16 22:38:15.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6600)
+2026-05-16 22:38:23.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6700)
+2026-05-16 22:38:31.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 6800)
+2026-05-16 22:38:39.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0011 (chunks: 6900)
+2026-05-16 22:38:47.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7000)
+2026-05-16 22:38:55.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7100)
+2026-05-16 22:39:03.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7200)
+2026-05-16 22:39:11.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7300)
+2026-05-16 22:39:19.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7400)
+2026-05-16 22:39:27.640 | DEBUG    | voice.wake_word:_listen_sync:206 - [WAKE] Speech segment started | rms=0.0506
+2026-05-16 22:39:27.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0018 (chunks: 7500)
+2026-05-16 22:39:28.284 | INFO     | voice.stt:_transcribe:154 - [STT] Transcribing audio | file=C:\Users\lokesh\AppData\Local\Temp\tmpunigaykh.wav
+2026-05-16 22:39:28.421 | INFO     | voice.stt:_transcribe:177 - [STT] Transcription complete | text=
+2026-05-16 22:39:35.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7600)
+2026-05-16 22:39:43.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7700)
+2026-05-16 22:39:51.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7800)
+2026-05-16 22:39:59.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 7900)
+2026-05-16 22:40:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8000)
+2026-05-16 22:40:15.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0014 (chunks: 8100)
+2026-05-16 22:40:23.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8200)
+2026-05-16 22:40:31.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8300)
+2026-05-16 22:40:39.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8400)
+2026-05-16 22:40:47.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0015 (chunks: 8500)
+2026-05-16 22:40:55.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0010 (chunks: 8600)
+2026-05-16 22:41:03.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8700)
+2026-05-16 22:41:11.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8800)
+2026-05-16 22:41:19.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 8900)
+2026-05-16 22:41:27.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9000)
+2026-05-16 22:41:35.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9100)
+2026-05-16 22:41:43.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9200)
+2026-05-16 22:41:51.953 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9300)
+2026-05-16 22:41:59.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9400)
+2026-05-16 22:42:07.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9500)
+2026-05-16 22:42:15.952 | DEBUG    | voice.wake_word:_listen_sync:168 - [WAKE] Audio level: 0.0003 (chunks: 9600)
+2026-05-16 22:42:19.011 | INFO     | __main__:shutdown:213 - 
+[VEDA] Shutting down...
+2026-05-16 22:42:19.012 | INFO     | voice.wake_word:stop:284 - [WAKE] Stop requested
+2026-05-16 22:42:19.012 | INFO     | __main__:shutdown:216 - [VEDA] ✓ Shutdown complete
+2026-05-16 22:42:19.151 | INFO     | voice.wake_word:_listen_sync:223 - [WAKE] Listening stopped
